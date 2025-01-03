@@ -5,13 +5,17 @@
 # 파이썬에서 제공되는 기본 모듈 사용하기
 # 모듈 불러오기
 # import 모듈명
+import mod1
+print(mod1.add(5,8))
+print(mod1.sub(8,3))
 
-import math
-print(dir(math)) #math 가 제공해주는 함수들
 
-# math 모듈에서 제공하는 함수 호출
-print(math.ceil(3.14))
-print(math.sin(1))
-print(math.cos(1))
-print(math.floor(3.14))
+from mod1 import *
 
+
+from mod2 import *
+prt1()
+prt2()
+
+import mod3
+print(mod3.add(17,5))
